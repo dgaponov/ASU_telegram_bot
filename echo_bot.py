@@ -41,7 +41,7 @@ def error(bot, update, error):
     logger.warn('Update %s" caused error "%s"' % (update, error))
 
 def main():
-    updater = Updater(token='181278118:AAEB5v_tF7e1LEyNm04TOMKVkSPFAeXjjXA')
+    updater = Updater(token='TOKEN')
     dp = updater.dispatcher
 
     dp.addTelegramCommandHandler("start", start)
