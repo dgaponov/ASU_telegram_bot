@@ -24,7 +24,7 @@ def pair_time(number):
         '5': '15:00-16:30',
         '6': '16:40-18:10',
         '7': '18:20-19:50'
-    }[number]
+    }.get(number, '')
 
 def echo(bot, update):
     dt = datetime.datetime.now()
